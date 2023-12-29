@@ -1,7 +1,0 @@
-<h1>SigUp</h1>
-<form method="POST">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">SigUp</button>
-    <a href="{% url "login" %}">Already have account?</a>
-</form>

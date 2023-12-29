@@ -8,6 +8,6 @@ class SignUpForm(UserCreationForm):
         fields = ['username', 'password1', 'password2']
 
 class LoginForm(forms.Form):
-    username = forms.CharField(max_length=250)
+    username = forms.CharField()
     password = forms.CharField(widget=forms.PasswordInput)
     
